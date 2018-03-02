@@ -18,31 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTg-Up-4vq">
-                                <rect key="frame" x="82" y="283" width="200" height="100"/>
-                                <state key="normal" title="Middle"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0I-SD-8Z8">
                                 <rect key="frame" x="87" y="64" width="200" height="100"/>
                                 <state key="normal" title="Top"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U24-GN-ECR">
-                                <rect key="frame" x="87" y="526" width="200" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTg-Up-4vq">
+                                <rect key="frame" x="82" y="283" width="200" height="100"/>
+                                <state key="normal" title="Middle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U24-GN-ECR">
+                                <rect key="frame" x="161.5" y="389" width="51" height="30"/>
                                 <state key="normal" title="Bottom"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="R0I-SD-8Z8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ENT-ze-QZ1"/>
-                            <constraint firstItem="U24-GN-ECR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MN1-oi-YMQ"/>
-                            <constraint firstItem="FTg-Up-4vq" firstAttribute="centerY" secondItem="U24-GN-ECR" secondAttribute="centerY" constant="-243" id="UDe-Rk-9hI"/>
-                            <constraint firstItem="FTg-Up-4vq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-5.5" id="VQu-Eb-qDi"/>
-                            <constraint firstItem="R0I-SD-8Z8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n3k-Gy-G5f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U24-GN-ECR" secondAttribute="bottom" constant="41" id="zEK-vx-F80"/>
+                            <constraint firstItem="FTg-Up-4vq" firstAttribute="top" secondItem="R0I-SD-8Z8" secondAttribute="bottom" constant="119" id="6te-Cv-cSf"/>
+                            <constraint firstItem="U24-GN-ECR" firstAttribute="top" secondItem="FTg-Up-4vq" secondAttribute="bottom" constant="146" id="7wG-vm-50O"/>
+                            <constraint firstItem="FTg-Up-4vq" firstAttribute="centerX" secondItem="R0I-SD-8Z8" secondAttribute="centerX" id="C41-Pf-Ps2"/>
+                            <constraint firstItem="U24-GN-ECR" firstAttribute="centerX" secondItem="FTg-Up-4vq" secondAttribute="centerX" id="Nzn-mJ-vCg"/>
+                            <constraint firstItem="R0I-SD-8Z8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a98-MN-YsS"/>
+                            <constraint firstItem="R0I-SD-8Z8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bfw-cc-gYy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="MzD-k8-gp7"/>
+                    <connections>
+                        <outlet property="button1" destination="R0I-SD-8Z8" id="uQv-aD-oFL"/>
+                        <outlet property="button2" destination="FTg-Up-4vq" id="Uv8-R1-Jvd"/>
+                        <outlet property="button3" destination="U24-GN-ECR" id="CQk-Yq-S5o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
